@@ -1,0 +1,148 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  width: 800px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: 300;
+  color: #e30000;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-weight: 300;
+  color: grey;
+  padding: 10px 20px;
+  margin: 0;
+}
+.title {
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+}
+.navbar a {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 16.5%;
+  /* border: 0.25px solid white; */
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.articles {
+  width: 66%;
+}
+.articles img {
+  width: 100%;
+}
+
+hr {
+  border-top: 0.5px solid #bbbbbb;
+  margin: 25px 0;
+}
+
+h3 {
+  color: #bbbbbb;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  font-weight: 300;
+  font-size: 24px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+h5 {
+  font-size: 80px;
+  color: #dddddd;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 20px 0 0;
+  float: left;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #888888;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+p {
+  color: #888888;
+  font-size: 12px;
+}
+.boldlink {
+  color: #e30000;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+aside {
+  width: 30%;
+  padding: 50px 0;
+}
+.ad {
+  width: 100%;
+  height: 200px;
+  background-color: #bbbbbb;
+  text-align:center;
+  padding: 40px;
+  font-size: 80px;
+  color: grey;
+}
+.footernav {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  margin: 0;
+}
+.footernav a {
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #e30000;
+  padding: 0 5px;
+  margin: 0;
+}
+.footernav hr {
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+footer p {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+ul {
+  color: #888888;
+  padding-left: 40px;
+}
+ul a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #e30000;
+} */
