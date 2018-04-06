@@ -12,7 +12,7 @@ get '/' do
     redirect to('/movie')
   end
   erb :index
-end
+end 
 
 get '/movie' do
   result = HTTParty.get('http://omdbapi.com/?apikey=2f6435d9&t='+ params[:t])
