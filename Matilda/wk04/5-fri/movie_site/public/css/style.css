@@ -16,6 +16,7 @@ a {
   color: black;
   font-size:2em;
   text-decoration: none;
+  display: block;
 }
 a:hover {
   color: white;

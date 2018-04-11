@@ -1,0 +1,6 @@
+<h2>Your search history:</h2>
+
+<% @history.each do |search|%>
+<a href="/movie?abc=<%=search%>"><%=search%> </a><br>
+  
+<% end %>

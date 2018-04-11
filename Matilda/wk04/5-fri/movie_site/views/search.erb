@@ -1,0 +1,4 @@
+<h2>There are a few options for <span class="bold"><%= params[:s]%>:</span></h2>
+<% $titleOptions.each do |title|%>
+  <a href="/movie?abc=<%=title%>"><%=title%> </a><br>
+<%end %>
