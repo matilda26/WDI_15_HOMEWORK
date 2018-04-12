@@ -4,7 +4,9 @@
     <p><span class="subtitle">Date released: </span> <%= @date %></p>
     <p><span class="subtitle">Duration: </span> <%= @duration %></p>
     <p><span class="subtitle">Director: </span> <%= @director %></p>
+    <p><span class="subtitle">Actors: </span> <%= @actors %></p>
     <p><span class="subtitle">Plot: </span> <%= @summary %></p>
+    <a href="<%= @website %>">More information</a>
   </div>
-  <img src="<%=@imageposter%>" alt="">
+  <img src="<%=@imageposter%>" alt="Poster of <%= @title%>">
 </div>
