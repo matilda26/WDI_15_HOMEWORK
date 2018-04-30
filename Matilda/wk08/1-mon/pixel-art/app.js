@@ -24,3 +24,9 @@ while (count < 99) {
   $canvas.append($square);
   count++;
 }
+
+document.querySelectorAll('.square').forEach(function(indivSquare) {
+  indivSquare.addEventListener('click', function() {
+    indivSquare.style.backgroundColor = 'green';
+  })
+})
