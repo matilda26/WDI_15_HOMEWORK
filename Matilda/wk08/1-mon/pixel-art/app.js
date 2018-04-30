@@ -18,7 +18,7 @@ $canvas = $('<div>');
 $canvas.addClass('canvas');
 $('body').append($canvas);
 var count = 0;
-while (count < 99) {
+while (count < 3000) {
   $square = $('<div>');
   $square.addClass('square');
   $canvas.append($square);
@@ -43,16 +43,5 @@ movieSubmit.addEventListener('click', function(event) {
   }
   $.ajax(options).done(function(res){
     $canvas.css("background-image", "url(" + res.Poster + ")");
-    // $moviePoster.attr('src', res.Poster);
-    // $moviePoster.addClass('background');
-    // $canvas.append($moviePoster);
-    // console.log(res);
   })
 })
-
-// colorInput.addEventListener("keyup", function(event) {
-//   event.preventDefault();
-//   if (event.keyCode === 13) {
-//     movieSubmit.click();
-//   }
-// });
