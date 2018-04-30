@@ -13,3 +13,14 @@ colorInput.addEventListener("keyup", function(event) {
     colorSubmit.click();
   }
 });
+
+$canvas = $('<div>');
+$canvas.addClass('canvas');
+$('body').append($canvas);
+var count = 0;
+while (count < 99) {
+  $square = $('<div>');
+  $square.addClass('square');
+  $canvas.append($square);
+  count++;
+}
