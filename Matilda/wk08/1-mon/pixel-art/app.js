@@ -26,7 +26,7 @@ while (count < 99) {
 }
 
 document.querySelectorAll('.square').forEach(function(indivSquare) {
-  indivSquare.addEventListener('click', function() {
+  indivSquare.addEventListener('mouseover', function() {
     indivSquare.style.backgroundColor = colorInput.value;
   })
 })
