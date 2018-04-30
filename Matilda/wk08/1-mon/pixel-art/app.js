@@ -30,3 +30,29 @@ document.querySelectorAll('.square').forEach(function(indivSquare) {
     indivSquare.style.backgroundColor = colorInput.value;
   })
 })
+
+var movieInput = document.querySelector('.movie-input');
+var movieSubmit = document.querySelector('.movie-btn');
+
+
+movieSubmit.addEventListener('click', function(event) {
+  var url = "http://omdbapi.com/?apikey=2f6435d9&t=" + movieInput.value;
+  var options = {
+    url: url,
+    method: 'get'
+  }
+  $.ajax(options).done(function(res){
+    $canvas.css("background-image", "url(" + res.Poster + ")");
+    // $moviePoster.attr('src', res.Poster);
+    // $moviePoster.addClass('background');
+    // $canvas.append($moviePoster);
+    // console.log(res);
+  })
+})
+
+// colorInput.addEventListener("keyup", function(event) {
+//   event.preventDefault();
+//   if (event.keyCode === 13) {
+//     movieSubmit.click();
+//   }
+// });
