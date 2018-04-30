@@ -27,6 +27,6 @@ while (count < 99) {
 
 document.querySelectorAll('.square').forEach(function(indivSquare) {
   indivSquare.addEventListener('click', function() {
-    indivSquare.style.backgroundColor = 'green';
+    indivSquare.style.backgroundColor = colorInput.value;
   })
 })
