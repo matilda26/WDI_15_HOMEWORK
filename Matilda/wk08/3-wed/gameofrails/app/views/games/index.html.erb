@@ -1,0 +1,51 @@
+<div class="magic-eight">
+  <h1>Magic 8 Ball</h1>
+  <label for="question">Ask a question</label>
+  <input type="text" name="question" class="question-input">
+  <button class="ask-question">submit</button>
+  <p class="question-answer"></p>
+</div>
+
+<script type="text/javascript">
+  var answers = ['Yes', 'No', 'You will know in time', "Most likely", "Without a doubt", "Don't count on it", "Outlook is good", "You can't change the past", "Reply hazy try again", "Concentrate and ask again", "My sources say no", "Outlook is not so good", "You may rely on it", "It is certain", "why"];
+  var askBtn = document.querySelector('.ask-question');
+  askBtn.addEventListener('click', function() {
+  var input = document.querySelector('.question-input');
+  var para = document.querySelector('.question-answer');
+    if (input.value.length > 1 && input.value.charAt(input.value.length -1) === '?') {
+      para.textContent = answers[Math.floor(Math.random()*answers.length)];
+    } else {
+      para.textContent = 'You have not asked a question. I cannot see an answer..';
+    }
+  })
+</script>
+
+<div class="secret-number">
+  <h1>Secret Number</h1>
+  <label for="number">Guess the secret number</label>
+  <p>Psst.. it's between 1-10</p>
+  <input type="text" name="number" class="number-input">
+  <button class="guess-number">guess</button>
+  <p class="number-answer"></p>
+</div>
+
+<script type="text/javascript">
+  var numBtn = document.querySelector('.guess-number');
+  var number = Math.floor(Math.random() * 10) + 1;
+  numBtn.addEventListener('click', function() {
+    var input = document.querySelector('.number-input');
+    var para = document.querySelector('.number-answer');
+    if (parseInt(input.value) === number) {
+      para.textContent = "It's a match!";
+    } else if (parseInt(input.value) < number) {
+      para.textContent = "Guess higher";
+    } else {
+      para.textContent = "Guess lower";
+    }
+  })
+</script>
+
+
+
+
+<h1>Rock Paper Scissors</h1>
